@@ -44,7 +44,7 @@ defmodule GenReportParallel do
     {:ok, result}
   end
 
-  def build_single_report(filename) do
+  defp build_single_report(filename) do
     filename
     |> Parser.parse_file()
     |> Enum.to_list()
